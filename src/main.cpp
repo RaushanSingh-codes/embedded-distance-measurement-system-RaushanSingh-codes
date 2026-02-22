@@ -19,6 +19,12 @@ float distance;
 
 
 void setup() {
+    Serial.begin(9600);
+
+    pinMode(TRIG_PIN, OUTPUT);
+    pinMode(ECHO_PIN, INPUT);
+
+    Serial.println("Ultrasonic Distance Measurement System Initialized");
 
 
 }
